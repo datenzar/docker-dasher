@@ -1,1 +1,5 @@
-/dasher
+node_modules
+config/config.json*
+.DS_Store
+._.DS_Store
+dasher
