@@ -1,0 +1,10 @@
+version: "2"
+services:
+  dasher:
+    build: .
+    volumes:
+      - ./dasher:/usr/src/app
+      - ./config:/usr/src/app/config
+    network_mode: "host"
+    restart: never
+    
