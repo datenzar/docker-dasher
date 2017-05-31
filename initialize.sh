@@ -2,6 +2,7 @@
 
 # pull dasher repository from github
 docker run --rm -it -w /app -v $(pwd):/app travix/base-alpine-git git clone https://github.com/maddox/dasher.git
+cp dasher/config/config.example.json config/config.example.json
 
 # rebuild the image from Dockerfile
 docker-compose build
