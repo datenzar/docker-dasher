@@ -6,5 +6,5 @@ services:
       - ./dasher:/usr/src/app
       - ./config:/usr/src/app/config
     network_mode: "host"
-    restart: never
+    restart: always
     
