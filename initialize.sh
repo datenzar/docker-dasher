@@ -8,7 +8,7 @@ cp dasher/config/config.example.json config/config.example.json
 docker-compose build
 
 # Install app dependencies
-docker-compose run dasher npm install
+docker-compose run --rm -e restart=none dasher npm install
 
 # start container
 docker-compose up -d
